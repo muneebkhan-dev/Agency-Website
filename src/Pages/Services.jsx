@@ -36,7 +36,7 @@ const Services = () => {
           <h1 className="text-[#00D0B0] font-bold py-4">SERVICES</h1>
           <div className="w-full flex gap-20">
             <h1 className="font-playfair w-1/2 text-[#0F0B33] text-4xl font-semibold">Where our services add value to your product</h1>
-            <p className="font-dm font-semibold text-sm w-1/2 leading-6 text-[#8e8e8f]">
+            <p className="font-dm font-semibold text-sm w-1/2 leading-6 text-[#222831]/60">
               Helping companies & individuals identify key solutions for their
               target markets. We boost their ability to create products. Our
               business model saves clients time and money. Don't reinvent the

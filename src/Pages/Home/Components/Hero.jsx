@@ -10,7 +10,7 @@ const Hero = () => {
           <h1 className="text-5xl leading-18 font-playfair font-semibold">We are <span className="text-[#00D0B0]">always</span> there for all your needs</h1>
         </div>
         <div className='w-1/2 flex flex-col my-5 gap-8'>
-          <div className="font-dm font-medium text-base leading-7 text-[#c2c2c2]">
+          <div className="font-dm font-medium text-base leading-7 text-white/70">
             We are a remote design agency based in Montreal, working with
             clients around the world. As passionate designers, we love building
             products that are easy to use, accessible, engaging, and delightful.
