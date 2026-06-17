@@ -1,46 +1,23 @@
-import React from 'react'
+import React from "react"
 
 const Contact = () => {
-
-  const teams = [
-    {
-      id: 1,
-      image: "/public/images/teams/Greg.png",
-      title: "Jhon Mock",
-      description: "Head of Development"
-    },
-
-    {
-      id: 2,
-      image: "/public/images/teams/Kyle.png",
-      title: "Ali Khan",
-      description: "Head of Operations"
-    },
-
-    {
-      id: 3,
-      image: "/public/images/teams/Liam.png",
-      title: "Lowen",
-      description: "Head of Design"
-    },
-
-    {
-      id: 4,
-      image: "/public/images/teams/Hans.png",
-      title: "Faizan",
-      description: "Senior Game Director"
-    },
-
-    {
-      id: 5,
-      image: "/public/images/teams/Dhru.png",
-      title: "Josh",
-      description: "Quality Assurance"
-    }
-  ]
-
   return (
-    <section></section>
+    <section className='relative min-h-screen px-10 py-10 mx-auto flex items-center justify-center'>
+      <div className='max-w-7xl bg-[#222831] w-full min-h-[80vh] flex gap-20'>
+        <div className="w-1/2 flex flex-col gap-15">
+          <h2 className='font-montserrat text-xs font-semibold text-[#00D0B0] tracking-[4px]'>
+            / CONTACT US
+          </h2>
+          <h3 className='font-playfair font-semibold text-white text-5xl tracking-tight leading-17'>
+            Have you decided to work on a project with us?
+          </h3>
+          <img src='/public/images/Group 3312.png' alt='lets-talk' className="w-1/2" />
+        </div>
+        <div className="w-1/3 flex flex-col justify-end">
+          <img src="/public/images/design-chair.png" alt="chair" className="h-70" />
+        </div>
+      </div>
+    </section>
   )
 }
 
