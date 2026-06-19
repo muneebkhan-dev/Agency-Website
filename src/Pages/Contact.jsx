@@ -17,7 +17,7 @@ const Contact = () => {
           <img src='/public/images/Group 3312.png' alt='lets-talk' className="w-2/3" />
         </div>
         <div className="flex-1 flex justify-center items-end px-10">
-          <img src="/public/images/design-chair.png" alt="chair" className="h-85" />
+          <img src="/images/design-chair.png" alt="chair" className="h-85" />
         </div>
       </div>
     </section>
