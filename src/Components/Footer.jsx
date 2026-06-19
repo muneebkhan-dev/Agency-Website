@@ -5,8 +5,8 @@ import { IoMdMail } from "react-icons/io";
 const Footer = () => {
   return (
     <>
-      <footer className='relative'>
-        <div className='max-w-7xl px-10 py-7 mx-auto flex justify-between'>
+      <footer className='relative px-20 py-10 flex justify-center'>
+        <div className='max-w-7xl w-full flex justify-between'>
           <div className='flex gap-2 font-bold'>
             <img src='/public/images/TRIANGLE.png' alt='' />
             <h1 className='text-xl text-[#222831]'>Myport</h1>

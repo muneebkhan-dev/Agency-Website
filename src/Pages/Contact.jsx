@@ -2,13 +2,13 @@ import React from "react"
 
 const Contact = () => {
   return (
-    <section className='relative min-h-screen px-20  mx-auto flex items-center justify-center'>
-      <div className='max-w-7xl bg-[#222831] w-full min-h-[90vh] flex'>
+    <section className='relative min-h-[90vh] px-20 mx-auto flex justify-center'>
+      <div className='max-w-7xl bg-[#222831] w-full flex-1 flex'>
         <div className="flex-1">
 
         </div>
         <div className="flex-2 flex flex-col justify-center gap-15 w-full">
-          <h2 className='font-montserrat text-xs font-semibold text-[#00D0B0] tracking-[5px]'>
+          <h2 className='font-montserrat text-xs font-semibold text-[#00D0B0] tracking-[6px]'>
             / CONTACT US
           </h2>
           <h3 className='font-playfair font-semibold text-white text-5xl tracking-tight leading-17'>
