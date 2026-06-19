@@ -41,7 +41,7 @@ const teams = () => {
 
   return (
     <section className='relative min-h-screen px-10 mx-auto flex flex-col items-center justify-center'>
-      <div className='max-w-7xl flex flex-col items-center gap-30'>  
+      <div className='max-w-7xl flex flex-col items-center gap-40'>  
         <div className='sub-heading'>
             <h2 className='font-playfair font-bold text-6xl text-[#222831]'>Our Teams</h2>
         </div>
