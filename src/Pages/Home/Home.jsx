@@ -1,19 +1,19 @@
 import React from 'react'
 import Hero from './Components/Hero'
-import Services from '../Services'
-import About from '../About'
+import ServicesSection from './Components/ServicesSection'
+import AboutSection from './Components/AboutSection'
 import Teams from './Components/Teams'
-import Contact from '../Contact'
+import ContactSection from './Components/ContactSection'
 
 
 const Home = () => {
   return (
     <>
     <Hero/>
-    <Services/>
-    <About/>
+    <ServicesSection/>
+    <AboutSection/>
     <Teams/> 
-    <Contact/>
+    <ContactSection/>
     </>
   )
 }
