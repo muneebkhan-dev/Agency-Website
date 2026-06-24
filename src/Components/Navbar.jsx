@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <header className="relative bg-[#222831] z-10">
+    <header className="relative bg-[#222831]">
       <div className="max-w-7xl px-3 py-7 mx-auto flex items-center justify-between bg-transparent text-[#FFFFFF]">
         <div className="flex gap-2 font-bold">
           <img src="/public/images/TRIANGLE.png" alt="" />
@@ -21,7 +21,6 @@ const Navbar = () => {
           <button>GET STARTED</button>
         </div>
       </div>
-        <img className="absolute right-0 top-0 w-1/4" src="/public/images/Rectangle 377.png" alt="" />
     </header>
   )
 }
