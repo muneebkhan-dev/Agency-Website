@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <img
-        className='absolute right-0 top-0 w-1/4 z-10'
+        className='hidden md:flex lg:flex absolute right-0 top-0 w-1/4 z-10'
         src='/public/images/Rectangle 377.png'
         alt=''
       />

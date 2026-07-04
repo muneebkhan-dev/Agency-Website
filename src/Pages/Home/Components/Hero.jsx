@@ -23,7 +23,7 @@ const Hero = () => {
       </div>
         <img className="absolute bottom-0 right-35 w-[80%] translate-y-1/2" src="/public/images/unsplash_hCb3lIB8L8E.png" alt="" />
       </div>
-      <img className="absolute bottom-0 left-0 w-1/4 translate-y-1/2" src="/public/images/Rectangle 380.png" alt="" />
+      <img className="hidden md:flex lg:flex absolute bottom-0 left-0 w-1/4 translate-y-1/2" src="/public/images/Rectangle 380.png" alt="" />
           </section>
   )
 }
