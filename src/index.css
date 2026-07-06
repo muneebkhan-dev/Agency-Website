@@ -13,3 +13,37 @@
 body {
   background-color: #ffffff;
 }
+
+@media (min-width: 767px) and (max-width: 877px) {
+    .heading {
+      font-size: 41px;
+    }
+}
+
+@media (min-width: 482px) and (max-width: 767px) {
+    .hero-sec {
+      margin-top: 35px;
+      width: 80%;
+      padding-left: 0px;
+      padding-right: 0px;
+      gap: 10px;
+    }
+
+    .para-1 {
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .cont-1 {
+      text-align: center;
+    }
+
+    .button {
+      justify-content: center;
+    }
+    
+    .heading {
+      font-size: 42px;
+      line-height: 50px;
+    }
+}
