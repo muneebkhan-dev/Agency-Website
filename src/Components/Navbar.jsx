@@ -18,7 +18,7 @@ const Navbar = () => {
           <h1 className='text-lg'>Myport</h1>
         </div>
         <button
-          className='md:hidden lg:hidden cursor-pointer'
+          className='md:hidden lg:hidden cursor-pointer z-40'
           onClick={() => setMenuOpen(true)}
         >
           <GiHamburgerMenu className='size-6' />
