@@ -40,17 +40,17 @@ const teams = () => {
   ]
 
   return (
-    <section className='relative min-h-screen px-10 mx-auto flex flex-col items-center justify-center'>
-      <div className='max-w-7xl flex flex-col items-center gap-40'>  
-        <div className='sub-heading'>
-            <h2 className='font-playfair font-bold text-6xl text-[#222831]'>Our Teams</h2>
+    <section className='relative min-h-150 lg:min-h-screen px-10 py-20 md:py-0 lg:py-0 mx-auto flex flex-col items-center justify-center'>
+      <div className='max-w-7xl w-full flex flex-col items-center gap-15 md:gap-20 lg:gap-40'>  
+        <div className='sub-heading w-full flex justify-center'>
+            <h2 className='font-playfair font-bold text-4xl lg:text-6xl text-[#222831]'>Our Teams</h2>
         </div>
-          <div className='flex items-center gap-20'>
+          <div className='w-full flex flex-col md:flex-row lg:flex-row items-center gap-10 md:gap-2 lg:gap-20'>
           {teams.map((teams) => (
-              <div key={teams.id} className="card flex flex-col items-center gap-3">
-                <img src={teams.image} alt="image" className="1/2"/>
-                <h3 className="font-dm font-bold text-[#222831] text-xl">{teams.title}</h3>
-                <p className="font-dm text-xm font-medium text-[#222831]/80 ">{teams.description}</p>
+              <div key={teams.id} className=" w-full flex flex-col items-center justify-center gap-2 text-center">
+                <img src={teams.image} alt="image" className="md:w-4/5 lg:w-auto" />
+                <h3 className="font-dm font-bold text-[#222831] text-xl md:text-base lg:text-xl">{teams.title}</h3>
+                <p className="font-dm text-lg md:text-sm lg:text-base font-medium text-[#222831]/80 ">{teams.description}</p>
               </div>
             ))}
             </div>

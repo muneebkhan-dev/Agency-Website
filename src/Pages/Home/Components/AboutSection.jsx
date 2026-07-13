@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutSection = () => {
   return (
-    <section className='relative w-full bg-[#222831] min-h-screen py-20 lg:py-30 overflow-hidden'>
+    <section className='relative w-full bg-[#222831] lg:min-h-screen py-20 lg:py-30 overflow-hidden'>
       <div className='w-full flex flex-col gap-20 '>
         <div className='max-w-7xl mx-auto flex flex-col md:flex-row lg:flex-row px-5 md:px-10 lg:px-10 items-center md:justify-between lg:justify-between gap-15 z-10'>
           <div className='about-content md:w-1/2 lg:w-2/5 flex flex-col items-center md:items-start lg:items-start text-center md:text-start lg:text-start gap-4 md:gap-5 lg:gap-8'>

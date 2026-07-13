@@ -29,7 +29,7 @@ const ServicesSection = () => {
   ]
 
   return (
-    <section className='relative min-h-screen flex items-start'>
+    <section className='relative flex items-start'>
       <div className='max-w-7xl py-15 px-5 md:px-10 lg:px-28 mx-auto flex flex-col gap-10'>
         <div className="div-2 pt-30 flex flex-col items-center md:items-start lg:items-start text-center md:text-start lg:text-start">
           <h1 className="font-DMmono text-[#00D0B0] w-3/4 text-sm lg:text-base font-semibold py-4 md:py-2 lg:py-4">SERVICES</h1>
