@@ -105,6 +105,13 @@ body {
       width: 66%;
     }
     
+    .footer-logo {
+      width: 75%;
+    }
+
+    .footer-content {
+      width: 80%;
+    }
 
 
 }
