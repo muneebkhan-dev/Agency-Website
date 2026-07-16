@@ -80,7 +80,7 @@ body {
     .card p {
       font-size: 18px;
     }
-
+    
     .div-2 h1 {
       font-size: 18px;
     }
@@ -104,6 +104,27 @@ body {
     .contact-sec img {
       width: 66%;
     }
+
+    .service-card h1 {
+      font-size: 24px;
+    }
+
+    .service-card {
+      height: 300px;
+      justify-content: center;
+    }
+
+    .service-h1 h1 {
+      font-size: 18px;
+    }
+
+    .service-content h2{
+      font-size: 34px;
+    }
+
+    .service-content p {
+      font-size: 18px;
+    }
     
     .footer-logo {
       width: 75%;
@@ -113,5 +134,8 @@ body {
       width: 80%;
     }
 
+    .cta-sec {
+      padding: 30px 30px;
+    }
 
 }
