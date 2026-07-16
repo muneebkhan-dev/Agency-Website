@@ -125,7 +125,16 @@ body {
     .service-content p {
       font-size: 18px;
     }
-    
+
+    .our-mission h2 {
+      font-size: 30px;
+    }
+
+    .about-cards h3 {
+      font-size: 36px;
+    }
+
+
     .footer-logo {
       width: 75%;
     }
