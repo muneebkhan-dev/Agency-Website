@@ -159,7 +159,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="px-5">
+        <div className="px-5 mb-10">
         <div className='w-full bg-[#061d41] rounded-2xl mx-auto shadow-xl '>
           <div className='cta-sec flex flex-col md:flex-row lg:flex-row items-center justify-between py-8 px-5 md:px-10 lg:px-30 gap-5 md:gap-0 lg:gap-0'>
             <div className='flex flex-col md:flex-row lg:flex-row items-center md:items-start lg:items-start text-center md:text-start lg:text-start gap-5 lg:gap-10'>

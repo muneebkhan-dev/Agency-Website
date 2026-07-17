@@ -60,7 +60,7 @@ const Services = () => {
 
   return (
     <section className='relative min-h-screen px-5 lg:px-10 mx-auto flex justify-center'>
-      <div className='max-w-7xl flex flex-col gap-20 md:gap-20 lg:gap-20'>
+      <div className='max-w-7xl flex flex-col gap-10'>
         <div className='service-h1 flex flex-col items-center md:items-start lg:items-start py-10 md:px-5 lg:px-10'>
           <h1 className='font-DMmono text-[#00D0B0] text-sm lg:text-base font-semibold py-4'>
             SERVICES
@@ -98,7 +98,7 @@ const Services = () => {
             )
           })}
         </div>
-        <div className='w-full bg-[#061d41] rounded-2xl mx-auto shadow-xl'>
+        <div className='w-full bg-[#061d41] rounded-2xl mx-auto shadow-xl my-10'>
         <div className='cta-sec flex flex-col md:flex-row lg:flex-row items-center justify-between py-8 px-5 md:px-10 lg:px-30 gap-5 md:gap-0 lg:gap-0'>
           <div className='flex flex-col md:flex-row lg:flex-row items-center md:items-start lg:items-start text-center md:text-start lg:text-start gap-5 lg:gap-10'>
             <div className='md:w-auto lg:w-auto rounded-full bg-white p-3 flex items-center'>
