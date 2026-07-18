@@ -159,30 +159,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="px-5 mb-10">
-        <div className='w-full bg-[#061d41] rounded-2xl mx-auto shadow-xl '>
-          <div className='cta-sec flex flex-col md:flex-row lg:flex-row items-center justify-between py-8 px-5 md:px-10 lg:px-30 gap-5 md:gap-0 lg:gap-0'>
-            <div className='flex flex-col md:flex-row lg:flex-row items-center md:items-start lg:items-start text-center md:text-start lg:text-start gap-5 lg:gap-10'>
-              <div className='md:w-auto lg:w-auto rounded-full bg-white p-3 flex items-center'>
-                <FaTelegramPlane className='text-[#0D9488] size-14 md:size-10 lg:size-10' />
-              </div>
-              <div className='flex flex-col justify-center gap-3 md:gap-0 lg:gap-2'>
-                <h4 className='font-poppins text-white text-2xl md:text-base lg:text-xl font-semibold'>
-                  Let's build something amazing together.
-                </h4>
-                <p className='font-dm text-base md:text-sm lg:text-sm text-white'>
-                  I'm always open to discussing new projects and ideas.
-                </p>
-              </div>
-            </div>
-            <div className='w-full md:w-auto lg:auto'>
-              <button className='w-full md:w-auto lg:w-auto font-dm text-lg text-white px-5 md:px-4 lg:px-6 py-3 md:py-3 lg:py-4 bg-[#0D9488] rounded-xl font-bold'>
-                Get in Touch
-              </button>
-            </div>
-          </div>
-        </div>
-        </div>
       </div>
     </section>
   )

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const ContactSection = () => {
   return (
@@ -14,7 +15,9 @@ const ContactSection = () => {
           <h3 className='font-playfair font-semibold text-white text-3xl md:text-5xl lg:text-5xl tracking-tight leading-10 md:leading-14 lg:leading-17'>
             Have you decided to work on a project with us?
           </h3>
-          <img src='/public/images/Group 3312.png' alt='lets-talk' className="w-3/4 md:w-2/3 lg:w-2/3" />
+            <Link to="/contact" className='w-3/4 md:w-2/3 lg:w-2/3 flex justify-center'>
+          <img src='/public/images/Group 3312.png' alt='lets-talk' className="w-full" />
+          </Link>
         </div>
         <div className="flex-1 md:flex-2 lg:flex-1 flex justify-center items-end px-10">
           <img src="/images/design-chair.png" alt="chair" className="h-70 md:h-85 lg:h-85" />

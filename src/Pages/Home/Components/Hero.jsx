@@ -1,5 +1,6 @@
 import React from "react"
 import { HiArrowLongRight } from "react-icons/hi2"
+import { Link } from "react-router-dom"
 
 const Hero = () => {
   return (
@@ -19,12 +20,12 @@ const Hero = () => {
               building products that are easy to use, accessible, engaging, and
               delightful.
             </div>
-            <div className='button flex items-center justify-start md:justify-center lg:justify-start gap-15'>
+            <Link to="/services" className='button flex items-center justify-start md:justify-center lg:justify-start gap-15'>
               <span className='[word-spacing:8px] text-[#00D0B0] text-xs font-semibold tracking-[4px] uppercase underline'>
-                / CONTACT US
+                / OUR SERVICES
               </span>
               <HiArrowLongRight className='text-[#00D0B0]' />
-            </div>
+            </Link>
           </div>
         </div>
         <div>

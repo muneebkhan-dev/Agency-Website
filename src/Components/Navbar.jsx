@@ -13,10 +13,10 @@ const Navbar = () => {
   return (
     <header className='relative bg-[#222831]'>
       <div className='max-w-7xl px-3 py-7 mx-auto flex items-center justify-between bg-transparent text-[#FFFFFF]'>
-        <div className='flex gap-2 font-bold'>
+        <Link to="/" className='flex gap-2 font-bold'>
           <img src='/public/images/TRIANGLE.png' alt='' />
           <h1 className='text-lg'>Myport</h1>
-        </div>
+        </Link>
         <button
           className='md:hidden lg:hidden cursor-pointer z-40'
           onClick={() => setMenuOpen(true)}
@@ -67,14 +67,14 @@ const Navbar = () => {
               <Link to='/contact'>Contact</Link>
             </ul>
             </div>
-            <div className='font-dm bg-[#00D0B0] text-white py-4 px-4 text-sm font-semibold flex justify-center rounded-lg z-20'>
+            <Link to="/contact" className='font-dm bg-[#00D0B0] text-white py-4 px-4 text-sm font-semibold flex justify-center rounded-lg z-20'>
           <button>GET STARTED</button>
-        </div>
+        </Link>
           </nav>
         </div>
-        <div className='bg-[#FFFFFF] hidden md:flex lg:flex text-[#0F0B33] py-3 px-5 text-xs font-bold items-center z-20'>
+        <Link to="/contact" className='bg-[#FFFFFF] cursor-pointer hidden md:flex lg:flex text-[#0F0B33] py-3 px-5 text-xs font-bold items-center z-20'>
           <button>GET STARTED</button>
-        </div>
+        </Link>
       </div>
       {menuOpen && (
         <div

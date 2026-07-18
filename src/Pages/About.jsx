@@ -4,6 +4,7 @@ import { FaPalette } from "react-icons/fa"
 import { MdDevices } from "react-icons/md"
 import { FaBolt } from "react-icons/fa6"
 import { FaTelegramPlane } from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 
 const About = () => {
@@ -148,9 +149,9 @@ const About = () => {
               </div>
             </div>
             <div className='w-full md:w-auto lg:auto'>
-              <button className='w-full md:w-auto lg:w-auto font-dm text-lg text-white px-5 md:px-4 lg:px-6 py-3 md:py-3 lg:py-4 bg-[#0D9488] rounded-xl font-bold'>
+              <Link to="/contact" className='w-full md:w-auto lg:w-auto font-dm text-lg text-white px-5 md:px-4 lg:px-6 py-3 md:py-3 lg:py-4 bg-[#0D9488] rounded-xl font-bold'>
                 Get in Touch
-              </button>
+              </Link>
             </div>
           </div>
         </div>
