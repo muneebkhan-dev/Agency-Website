@@ -23,6 +23,7 @@ const AboutSection = () => {
                 large companies and startups to deliver award‑winning websites.
               </p>
             </div>
+            
             <div>
               <Link to="/contact" className='font-poppins font-bold lg:font-extrabold text-base md:text-xs lg:text-xs bg-[#00D0B0] text-white px-15 md:px-10 lg:px-13 py-4 md:py-3 lg:py-5'>
                 HIRE US
