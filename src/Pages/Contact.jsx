@@ -22,15 +22,33 @@ const Contact = () => {
     message: "",
   })
 
+  const [errors, setErrors] = useState({})
+
+   
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     })
+     if(e.target.name === 'name' &&  e.target.value.length < 3) {
+        setErrors({
+          name: "Name must be at least 3 characters."
+        });
+      } else {
+        setErrors({})
+      }
+         
+      console.log(formData)
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    if(!formData.name.trim()) {
+      setErrors({
+        name: "please enter your name",
+      });
+      return;
+    }
 
     console.log(formData)
   }
@@ -58,7 +76,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className='flex text-start flex-col gap-3'>
               <div>
                 <h3 className='text-base font-bold py-2'>Full Name</h3>
-                <div className='relative border-2 border-slate-100 rounded-xl'>
+                <div className={`relative border-2 rounded-xl ${ errors.name ? "border-red-400" : "border-slate-100"}`}>
                   <input
                     name='name'
                     value={formData.name}
@@ -69,6 +87,11 @@ const Contact = () => {
                   />
                   <RxPerson className='absolute size-5 right-4 top-1/2 -translate-y-1/2' />
                 </div>
+                {errors.name && (
+                    <p className="text-red-500 text-sm mt-1">
+                      {errors.name}
+                    </p>
+                  )}
               </div>
               <div>
                 <h3 className='text-base font-bold py-2'>Email Address</h3>
