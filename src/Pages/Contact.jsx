@@ -24,30 +24,50 @@ const Contact = () => {
 
   const [errors, setErrors] = useState({})
 
-   
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     })
-     if(e.target.name === 'name' &&  e.target.value.length < 3) {
-        setErrors({
-          name: "Name must be at least 3 characters."
-        });
-      } else {
-        setErrors({})
-      }
+    if (e.target.name === "name" && e.target.value.length < 3) {
+      setErrors({
+        name: "Name must be at least 3 characters.",
+      })
+    } else {
+      setErrors({
+        ...errors,
          
-      console.log(formData)
+      })
+    }
+
+    if (e.target.name === "email" && e.target.value.length < 3) {
+      setErrors({
+        email: "Please enter a valid email",
+      })
+    } else {
+      setErrors({
+        ...errors,
+        name: "Name must be at least 3 characters",
+      })
+    }
+
+    console.log(formData)
   }
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    if(!formData.name.trim()) {
+    if (!formData.name.trim()) {
       setErrors({
-        name: "please enter your name",
-      });
-      return;
+        name: "Please enter your name",
+      })
+      return
+    }
+
+    if (!formData.email.trim()) {
+      setErrors({
+        email: "Please enter your email",
+      })
+      return
     }
 
     console.log(formData)
@@ -73,10 +93,15 @@ const Contact = () => {
         </div>
         <div className='contact-content max-w-7xl px-5 md:px-10 lg:px-30 py-10 md:py-20 lg:py-20 mx-auto flex flex-col md:flex-row lg:flex-row gap-10 md:gap-7 lg:gap-15'>
           <div className='w-auto md:w-3/5 lg:w-3/5 shadow-xl rounded-2xl p-8 border-2 border-slate-100'>
-            <form onSubmit={handleSubmit} className='flex text-start flex-col gap-3'>
+            <form
+              onSubmit={handleSubmit}
+              className='flex text-start flex-col gap-3'
+            >
               <div>
                 <h3 className='text-base font-bold py-2'>Full Name</h3>
-                <div className={`relative border-2 rounded-xl ${ errors.name ? "border-red-400" : "border-slate-100"}`}>
+                <div
+                  className={`relative border-2 rounded-xl ${errors.name ? "border-red-400" : "border-slate-100"}`}
+                >
                   <input
                     name='name'
                     value={formData.name}
@@ -88,14 +113,12 @@ const Contact = () => {
                   <RxPerson className='absolute size-5 right-4 top-1/2 -translate-y-1/2' />
                 </div>
                 {errors.name && (
-                    <p className="text-red-500 text-sm mt-1">
-                      {errors.name}
-                    </p>
-                  )}
+                  <p className='text-red-500 text-sm mt-1'>{errors.name}</p>
+                )}
               </div>
               <div>
                 <h3 className='text-base font-bold py-2'>Email Address</h3>
-                <div className='relative border-2 border-slate-100 rounded-xl'>
+                <div className={`relative border-2 rounded-xl  ${errors.email ? "border-red-400" : "border-slate-100"}`}>
                   <input
                     name='email'
                     value={formData.email}
@@ -106,6 +129,9 @@ const Contact = () => {
                   />
                   <MdMailOutline className='absolute size-5 right-4 top-1/2 -translate-y-1/2' />
                 </div>
+                {errors.email && (
+                  <p className='text-red-500 text-sm mt-1'>{errors.email}</p>
+                )}
               </div>
               <div>
                 <h3 className='text-base font-bold py-2'>Subject</h3>
@@ -136,7 +162,10 @@ const Contact = () => {
                 </div>
               </div>
               <div className='flex items-start'>
-                <button onSubmit={handleSubmit} className='font-dm px-5 py-3 rounded-xl text-sm font-bold bg-[#00D0B0] text-white flex gap-2 items-center'>
+                <button
+                  onSubmit={handleSubmit}
+                  className='font-dm px-5 py-3 rounded-xl text-sm font-bold bg-[#00D0B0] text-white flex gap-2 items-center'
+                >
                   <PiTelegramLogoBold className='text-white size-4' />
                   Send Message
                 </button>
