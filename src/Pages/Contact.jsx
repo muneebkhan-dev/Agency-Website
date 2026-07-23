@@ -62,11 +62,25 @@ const Contact = () => {
       if (e.target.value.length < 3) {
         setErrors({
           ...errors,
-          subject: "Name must be at least 10 characters",
+          subject: "Subject must be at least 3 characters",
         })
       } else {
         setErrors((prev) => {
           const { subject, ...rest } = prev
+          return rest
+        })
+      }
+    }
+
+    if (e.target.name === "message") {
+      if (e.target.value.length < 10) {
+        setErrors({
+          ...errors,
+          message: "Message must be at least 10 characters",
+        })
+      } else {
+        setErrors((prev) => {
+          const { message, ...rest } = prev
           return rest
         })
       }
@@ -98,6 +112,12 @@ const Contact = () => {
       return
     }
 
+    if (!formData.message.trim()) {
+      setErrors({
+        message: "Please enter your message",
+      })
+      return
+    }
     
 
     console.log(formData)
@@ -195,6 +215,9 @@ const Contact = () => {
                   ></textarea>
                   <MdOutlineEdit className='absolute size-5 right-5 top-3/4 -translate-y-1/2 text-gray-600' />
                 </div>
+                {errors.message && (
+                  <p className='text-red-500 text-sm mt-1'>{errors.message}</p>
+                )}
               </div>
               <div className='flex items-start'>
                 <button
