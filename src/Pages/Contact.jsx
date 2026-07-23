@@ -45,7 +45,12 @@ const Contact = () => {
     }
 
     if (e.target.name === "email") {
-      if (e.target.value.length < 3) {
+        setErrors({
+          ...errors,
+          email: "Email Required",
+        })
+      
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.target.value)) {
         setErrors({
           ...errors,
           email: "Please enter a valid email",
@@ -118,7 +123,6 @@ const Contact = () => {
       })
       return
     }
-    
 
     console.log(formData)
   }
@@ -144,6 +148,7 @@ const Contact = () => {
         <div className='contact-content max-w-7xl px-5 md:px-10 lg:px-30 py-10 md:py-20 lg:py-20 mx-auto flex flex-col md:flex-row lg:flex-row gap-10 md:gap-7 lg:gap-15'>
           <div className='w-auto md:w-3/5 lg:w-3/5 shadow-xl rounded-2xl p-8 border-2 border-slate-100'>
             <form
+              noValidate={true}
               onSubmit={handleSubmit}
               className='flex text-start flex-col gap-3'
             >
