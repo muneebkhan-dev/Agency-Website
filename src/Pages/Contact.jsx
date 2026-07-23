@@ -19,6 +19,7 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    subject: "",
     message: "",
   })
 
@@ -33,7 +34,7 @@ const Contact = () => {
       if (e.target.value.length < 3) {
         setErrors({
           ...errors,
-          name: "Name must be at least 3 characters.",
+          name: "Name must be at least 3 characters",
         })
       } else {
         setErrors((prev) => {
@@ -57,6 +58,20 @@ const Contact = () => {
       }
     }
 
+    if (e.target.name === "subject") {
+      if (e.target.value.length < 3) {
+        setErrors({
+          ...errors,
+          subject: "Name must be at least 10 characters",
+        })
+      } else {
+        setErrors((prev) => {
+          const { subject, ...rest } = prev
+          return rest
+        })
+      }
+    }
+
     console.log(formData)
   }
 
@@ -75,6 +90,15 @@ const Contact = () => {
       })
       return
     }
+
+    if (!formData.subject.trim()) {
+      setErrors({
+        subject: "Please enter your subject",
+      })
+      return
+    }
+
+    
 
     console.log(formData)
   }
@@ -154,6 +178,9 @@ const Contact = () => {
                   />
                   <IoDocumentTextOutline className='absolute size-5 right-4 top-1/2 -translate-y-1/2 text-gray-600' />
                 </div>
+                {errors.subject && (
+                  <p className='text-red-500 text-sm mt-1'>{errors.subject}</p>
+                )}
               </div>
               <div>
                 <h3 className='text-base font-bold py-2'>Message</h3>
