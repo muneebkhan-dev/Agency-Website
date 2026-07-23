@@ -29,26 +29,32 @@ const Contact = () => {
       ...formData,
       [e.target.name]: e.target.value,
     })
-    if (e.target.name === "name" && e.target.value.length < 3) {
-      setErrors({
-        name: "Name must be at least 3 characters.",
-      })
-    } else {
-      setErrors({
-        ...errors,
-         
-      })
+    if (e.target.name === "name") {
+      if (e.target.value.length < 3) {
+        setErrors({
+          ...errors,
+          name: "Name must be at least 3 characters.",
+        })
+      } else {
+        setErrors((prev) => {
+          const { name, ...rest } = prev
+          return rest
+        })
+      }
     }
 
-    if (e.target.name === "email" && e.target.value.length < 3) {
-      setErrors({
-        email: "Please enter a valid email",
-      })
-    } else {
-      setErrors({
-        ...errors,
-        name: "Name must be at least 3 characters",
-      })
+    if (e.target.name === "email") {
+      if (e.target.value.length < 3) {
+        setErrors({
+          ...errors,
+          email: "Please enter a valid email",
+        })
+      } else {
+        setErrors((prev) => {
+          const { email, ...rest } = prev
+          return rest
+        })
+      }
     }
 
     console.log(formData)
@@ -118,7 +124,9 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className='text-base font-bold py-2'>Email Address</h3>
-                <div className={`relative border-2 rounded-xl  ${errors.email ? "border-red-400" : "border-slate-100"}`}>
+                <div
+                  className={`relative border-2 rounded-xl  ${errors.email ? "border-red-400" : "border-slate-100"}`}
+                >
                   <input
                     name='email'
                     value={formData.email}
