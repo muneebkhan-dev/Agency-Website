@@ -31,19 +31,19 @@ const Hero = () => {
         <div>
           <img
             className='meetImg absolute bottom-0 left-1/2 object-cover object-left md:object-center h-60 md:h-60 lg:h-70 w-full md:w-full lg:w-[80%] -translate-x-1/2 translate-y-1/2 md:translate-y-1/2 rounded-2xl lg:rounded-none'
-            src='/public/images/unsplash_hCb3lIB8L8E.png'
+            src='/images/unsplash_hCb3lIB8L8E.png'
             alt=''
           />
         </div>
         <img
-        src='/public/images/Rectangle 381.png'
+        src='/images/Rectangle 381.png'
         alt='decorator img'
         className='decorator-img md:hidden lg:hidden absolute w-1/2 -top-15 -right-20'
       />
       </div>
       <img
         className='hidden lg:flex absolute bottom-0 left-0 w-1/4 translate-y-1/2'
-        src='/public/images/Rectangle 380.png'
+        src='/images/Rectangle 380.png'
         alt=''
       />
       

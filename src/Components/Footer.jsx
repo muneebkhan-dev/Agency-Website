@@ -16,7 +16,7 @@ const Footer = () => {
         <div className='max-w-7xl w-full flex flex-col md:flex-row lg:flex-row justify-between items-center gap-7'>
           <div className="footer-logo w-full md:w-auto lg:w-auto flex flex-col items-center py-5 md:py-0 lg:py-0 gap-3 border-b border-gray-300 md:border-none lg:border-none">
             <Link to="/" className='flex gap-2 font-bold'>
-              <img src='/public/images/TRIANGLE.png' alt='' />
+              <img src='/images/TRIANGLE.png' alt='' />
               <h1 className='text-xl'>Myport</h1>
             </Link>
             <div className='flex md:hidden lg:hidden text-center text-lg'>

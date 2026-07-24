@@ -31,7 +31,7 @@ const AboutSection = () => {
             </div>
           </div>
           <div className='img w-full md:w-1/2 lg:w-1/2 flex flex-col justify-center lg:flex-none'>
-            <img className='' src='/public/images/Group 48095475.png' alt='' />
+            <img className='' src='/images/Group 48095475.png' alt='' />
           </div>
         </div>
         <div className='slid-bar'>
@@ -43,12 +43,12 @@ const AboutSection = () => {
         </div>
       </div>
       <img
-        src='/public/images/Rectangle 381.png'
+        src='/images/Rectangle 381.png'
         alt='decorator img'
         className='hidden md:flex lg:flex absolute w-1/3 -top-30 right-0'
       />
       <img
-        src='/public/images/Rectangle 381 (2).png'
+        src='/images/Rectangle 381 (2).png'
         alt='decorator img'
         className='hidden md:flex lg:flex absolute w-1/3 bottom-50 left-0'
       />

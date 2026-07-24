@@ -4,7 +4,7 @@ const ServicesSection = () => {
   const service = [
     {
       id: 1,
-      image: "/public/Icon.png",
+      image: "/Icon.png",
       title: "Development",
       description:
         "Create a platform with the best and coolest quality from us.",
@@ -12,7 +12,7 @@ const ServicesSection = () => {
 
     {
       id: 2,
-      image: "/public/Icon (1).png",
+      image: "/Icon (1).png",
       title: "UI/UX Designer",
       description:
         "We provide UI/UX Design services, and of course with the best quality",
@@ -20,7 +20,7 @@ const ServicesSection = () => {
 
     {
       id: 3,
-      image: "/public/Icon.png",
+      image: "/Icon.png",
       title: "Graphic Designer",
       description:
         "We provide Graphic Design services, with the best designers",

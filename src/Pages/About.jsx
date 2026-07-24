@@ -62,7 +62,7 @@ const About = () => {
             </div>
           </div>
           <div className='img w-full md:w-1/2 lg:w-1/2 flex flex-col justify-center lg:flex-none'>
-            <img className='' src='/public/images/Group 48095475.png' alt='' />
+            <img className='' src='/images/Group 48095475.png' alt='' />
           </div>
         </div>
         <div className='flex py-10 bg-[#E6FBF8] rounded-3xl px-10 lg:px-15'>
