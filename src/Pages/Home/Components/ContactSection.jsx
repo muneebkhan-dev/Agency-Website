@@ -16,7 +16,7 @@ const ContactSection = () => {
             Have you decided to work on a project with us?
           </h3>
             <Link to="/contact" className='w-3/4 md:w-2/3 lg:w-2/3 flex justify-center'>
-          <img src='/public/images/Group 3312.png' alt='lets-talk' className="w-full" />
+          <img src='/public/images/Group 3312.png' alt='lets-talk' className="w-full transition-all duration-300 hover:scale-105" />
           </Link>
         </div>
         <div className="flex-1 md:flex-2 lg:flex-1 flex justify-center items-end px-10">
