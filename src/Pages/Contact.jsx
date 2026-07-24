@@ -25,6 +25,8 @@ const Contact = () => {
 
   const [errors, setErrors] = useState({})
 
+  const [isSubmitted, setIsSubmitted] = useState(false)
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -45,11 +47,11 @@ const Contact = () => {
     }
 
     if (e.target.name === "email") {
-        setErrors({
-          ...errors,
-          email: "Email Required",
-        })
-      
+      setErrors({
+        ...errors,
+        email: "Email Required",
+      })
+
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e.target.value)) {
         setErrors({
           ...errors,
@@ -123,6 +125,19 @@ const Contact = () => {
       })
       return
     }
+
+    if (Object.keys(errors).length === 0) {
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      })
+      setIsSubmitted(true)
+      setTimeout(() => {
+        setIsSubmitted(false)
+      }, 3000);
+    } 
 
     console.log(formData)
   }
@@ -230,9 +245,12 @@ const Contact = () => {
                   className='font-dm px-5 py-3 rounded-xl text-sm font-bold bg-[#00D0B0] text-white flex gap-2 items-center'
                 >
                   <PiTelegramLogoBold className='text-white size-4 transition-all duration-300 hover:bg-[#256e63]' />
-                  Send Message
+                  Send Message 
                 </button>
               </div>
+              {isSubmitted &&  (
+                  <p className='text-green-500 text-sm mt-1 transition-all'> Your message has been sent successfully.</p>
+                )}
             </form>
           </div>
           <div className='py-10'>

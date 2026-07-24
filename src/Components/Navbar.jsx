@@ -13,7 +13,7 @@ const Navbar = () => {
     <header className='relative bg-[#222831]'>
       <div className='max-w-7xl px-3 py-7 mx-auto flex items-center justify-between bg-transparent text-[#FFFFFF]'>
         <Link to='/' className='flex gap-2 font-bold'>
-          <img src='/public/images/TRIANGLE.png' alt='' />
+          <img src='/images/TRIANGLE.png' alt='' />
           <h1 className='text-lg transition-all duration-300 hover:text-[#f2f7f6]'>Myport</h1>
         </Link>
         <button
