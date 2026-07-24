@@ -1,11 +1,10 @@
 import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import { GiHamburgerMenu } from "react-icons/gi"
-import { IoMdHome } from "react-icons/io";
-import { IoIosAlert } from "react-icons/io";
-import { IoIosCall } from "react-icons/io";
-import { HiBriefcase } from "react-icons/hi";
-
+import { IoMdHome } from "react-icons/io"
+import { IoIosAlert } from "react-icons/io"
+import { IoIosCall } from "react-icons/io"
+import { HiBriefcase } from "react-icons/hi"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -13,9 +12,9 @@ const Navbar = () => {
   return (
     <header className='relative bg-[#222831]'>
       <div className='max-w-7xl px-3 py-7 mx-auto flex items-center justify-between bg-transparent text-[#FFFFFF]'>
-        <Link to="/" className='flex gap-2 font-bold'>
+        <Link to='/' className='flex gap-2 font-bold'>
           <img src='/public/images/TRIANGLE.png' alt='' />
-          <h1 className='text-lg'>Myport</h1>
+          <h1 className='text-lg transition-all duration-300 hover:text-[#f2f7f6]'>Myport</h1>
         </Link>
         <button
           className='md:hidden lg:hidden cursor-pointer z-40'
@@ -25,10 +24,10 @@ const Navbar = () => {
         </button>
         <div className='relative hidden md:flex lg:flex'>
           <nav className='flex gap-8 font-normal'>
-            <Link to='/'>HOME</Link>
-            <Link to='/services'>SERVICES</Link>
-            <Link to='/about'>ABOUT US</Link>
-            <Link to='/contact'>CONTACT US</Link>
+            <Link to='/' className="transition-all duration-300 hover:text-[#f2f7f6d3]">HOME</Link>
+            <Link to='/services' className="transition-all duration-300 hover:text-[#f2f7f6d3]">SERVICES</Link>
+            <Link to='/about' className="transition-all duration-300 hover:text-[#f2f7f6d3]">ABOUT US</Link>
+            <Link to='/contact' className="transition-all duration-300 hover:text-[#f2f7f6d3]">CONTACT US</Link>
           </nav>
         </div>
         <div
@@ -36,43 +35,49 @@ const Navbar = () => {
             menuOpen ? "translate-x-0" : "translate-x-full"
           } z-50`}
         >
-          <div className="flex justify-end">
-          <button
-            className='p-4 cursor-pointer text-[#0F0B33] font-bold text-xl '
-            onClick={() => setMenuOpen(false)}
-          >
-            ✕
-          </button>
+          <div className='flex justify-end'>
+            <button
+              className='p-4 cursor-pointer text-[#0F0B33] font-bold text-xl '
+              onClick={() => setMenuOpen(false)}
+            >
+              ✕
+            </button>
           </div>
           <nav className='flex flex-col justify-start px-7 text-[#222831]/90 gap-7'>
-            <div className="flex items-center gap-8 font-semibold border-b border-gray-300 py-7">
-            <ul className='flex flex-col gap-10'>
-              <li>
-                <IoMdHome className='size-7' />
-              </li>
-              <li>
-                <IoIosAlert className='size-7' />
-              </li>
-              <li>
-                <HiBriefcase className='size-7' />
-              </li>
-              <li>
-                <IoIosCall className='size-7' />
-              </li>
-            </ul>
-            <ul className="font-dm text-lg flex flex-col gap-10">
-              <Link to='/'>Home</Link>
-              <Link to='/services'>Services</Link>
-              <Link to='/about'>About</Link>
-              <Link to='/contact'>Contact</Link>
-            </ul>
+            <div className='flex items-center gap-8 font-semibold border-b border-gray-300 py-7'>
+              <ul className='flex flex-col gap-10'>
+                <li>
+                  <IoMdHome className='size-7' />
+                </li>
+                <li>
+                  <IoIosAlert className='size-7' />
+                </li>
+                <li>
+                  <HiBriefcase className='size-7' />
+                </li>
+                <li>
+                  <IoIosCall className='size-7' />
+                </li>
+              </ul>
+              <ul className='font-dm text-lg flex flex-col gap-10'>
+                <Link to='/'>Home</Link>
+                <Link to='/services'>Services</Link>
+                <Link to='/about'>About</Link>
+                <Link to='/contact'>Contact</Link>
+              </ul>
             </div>
-            <Link to="/contact" className='font-dm bg-[#00D0B0] text-white py-4 px-4 text-sm font-semibold flex justify-center rounded-lg z-20'>
-          <button>GET STARTED</button>
-        </Link>
+            <Link
+              to='/contact'
+              className='font-dm bg-[#00D0B0] text-white py-4 px-4 text-sm font-semibold flex justify-center rounded-lg z-20'
+            >
+              <button>GET STARTED</button>
+            </Link>
           </nav>
         </div>
-        <Link to="/contact" className='bg-[#FFFFFF] cursor-pointer hidden md:flex lg:flex text-[#0F0B33] py-3 px-5 text-xs font-bold items-center z-20'>
+        <Link
+          to='/contact'
+          className='bg-[#FFFFFF] transition-all duration-300 hover:bg-[#f2f7f6] cursor-pointer hidden md:flex lg:flex text-[#0F0B33] py-3 px-5 text-xs font-bold items-center z-20'
+        >
           <button>GET STARTED</button>
         </Link>
       </div>

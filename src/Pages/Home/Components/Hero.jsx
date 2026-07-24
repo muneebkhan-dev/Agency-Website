@@ -20,11 +20,11 @@ const Hero = () => {
               building products that are easy to use, accessible, engaging, and
               delightful.
             </div>
-            <Link to="/services" className='button flex items-center justify-start md:justify-center lg:justify-start gap-15'>
-              <span className='[word-spacing:8px] text-[#00D0B0] text-xs font-semibold tracking-[4px] uppercase underline'>
+            <Link to="/services" className='group button flex items-center justify-start md:justify-center lg:justify-start gap-15 transition-all duration-300'>
+              <span className='[word-spacing:8px] text-[#00D0B0] text-xs font-semibold tracking-[4px] uppercase underline group-hover:text-[#4ff3da]'>
                 / OUR SERVICES
               </span>
-              <HiArrowLongRight className='text-[#00D0B0]' />
+              <HiArrowLongRight className='text-[#00D0B0] transition-all duration-300 group-hover:text-[#4ff3da]' />
             </Link>
           </div>
         </div>

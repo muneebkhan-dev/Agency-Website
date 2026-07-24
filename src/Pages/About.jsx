@@ -56,9 +56,9 @@ const About = () => {
               </p>
             </div>
             <div>
-              <button className='font-poppins font-extrabold text-base md:text-xs lg:text-xs bg-[#00D0B0] text-white px-15 md:px-10 lg:px-13 py-4 md:py-3 lg:py-5'>
+              <Link to="/contact" className='font-poppins font-extrabold text-base md:text-xs lg:text-xs bg-[#00D0B0] text-white px-15 md:px-10 lg:px-13 py-4 md:py-3 lg:py-5 transition-all duration-300 hover:bg-[#20bea7]'>
                 HIRE US
-              </button>
+              </Link>
             </div>
           </div>
           <div className='img w-full md:w-1/2 lg:w-1/2 flex flex-col justify-center lg:flex-none'>
@@ -149,7 +149,7 @@ const About = () => {
               </div>
             </div>
             <div className='w-full md:w-auto lg:auto'>
-              <Link to="/contact" className='w-full md:w-auto lg:w-auto font-dm text-lg text-white px-5 md:px-4 lg:px-6 py-3 md:py-3 lg:py-4 bg-[#0D9488] rounded-xl font-bold'>
+              <Link to="/contact" className='w-full md:w-auto lg:w-auto font-dm text-lg text-white px-5 md:px-4 lg:px-6 py-3 md:py-3 lg:py-4 bg-[#0D9488] rounded-xl font-bold transition-all duration-300 hover:bg-[#0fc5aa]'>
                 Get in Touch
               </Link>
             </div>

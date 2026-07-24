@@ -229,7 +229,7 @@ const Contact = () => {
                   onSubmit={handleSubmit}
                   className='font-dm px-5 py-3 rounded-xl text-sm font-bold bg-[#00D0B0] text-white flex gap-2 items-center'
                 >
-                  <PiTelegramLogoBold className='text-white size-4' />
+                  <PiTelegramLogoBold className='text-white size-4 transition-all duration-300 hover:bg-[#256e63]' />
                   Send Message
                 </button>
               </div>
