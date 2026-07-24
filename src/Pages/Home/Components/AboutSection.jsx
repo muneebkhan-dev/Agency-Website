@@ -36,7 +36,7 @@ const AboutSection = () => {
         </div>
         <div className='slid-bar'>
           <img
-            src='/public/images/Group 14.png'
+            src='/images/Group 14.png'
             alt='image'
             className='w-full h-50 md:h-auto lg:h-auto object-cover '
           />

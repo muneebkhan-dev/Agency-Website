@@ -149,8 +149,10 @@ const About = () => {
               </div>
             </div>
             <div className='w-full md:w-auto lg:auto'>
-              <Link to="/contact" className='w-full md:w-auto lg:w-auto font-dm text-lg text-white px-5 md:px-4 lg:px-6 py-3 md:py-3 lg:py-4 bg-[#0D9488] rounded-xl font-bold transition-all duration-300 hover:bg-[#0fc5aa]'>
+              <Link to="/contact">
+              <button className='w-full md:w-auto lg:w-auto font-dm text-lg text-white px-5 md:px-4 lg:px-6 py-3 md:py-3 lg:py-4 bg-[#0D9488] rounded-xl font-bold transition-all duration-300 hover:bg-[#0fc5aa] cursor-pointer'>
                 Get in Touch
+              </button>
               </Link>
             </div>
           </div>
