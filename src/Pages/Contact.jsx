@@ -14,6 +14,7 @@ import { FaLinkedin } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
 import { FaFacebook } from "react-icons/fa"
 import { FaTelegramPlane } from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -207,7 +208,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className='text-base font-bold py-2'>Subject</h3>
-                <div className='relative border-2 border-slate-100 rounded-xl'>
+                <div className={`relative border-2 rounded-xl ${errors.subject ? "border-red-400" : "border-slate-100"}`}>
                   <input
                     name='subject'
                     value={formData.subject}
@@ -224,7 +225,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className='text-base font-bold py-2'>Message</h3>
-                <div className='relative border-2 border-slate-100 rounded-xl  py-4 px-4'>
+                <div className={`relative border-2  rounded-xl py-4 px-4 ${errors.message ? "border-red-400" : "border-slate-100"}`}>
                   <textarea
                     name='message'
                     value={formData.message}
@@ -233,7 +234,6 @@ const Contact = () => {
                     placeholder='Write your message here...'
                     className='w-full min-h-40 font-dm placeholder:font-medium text-sm md:text-base lg:text-base placeholder:text-gray-400 flex justify-start outline-none'
                   ></textarea>
-                  <MdOutlineEdit className='absolute size-5 right-5 top-3/4 -translate-y-1/2 text-gray-600' />
                 </div>
                 {errors.message && (
                   <p className='text-red-500 text-sm mt-1'>{errors.message}</p>
@@ -242,9 +242,9 @@ const Contact = () => {
               <div className='flex items-start'>
                 <button
                   onSubmit={handleSubmit}
-                  className='font-dm px-5 py-3 rounded-xl text-sm font-bold bg-[#00D0B0] text-white flex gap-2 items-center'
+                  className='font-dm px-5 py-3 rounded-xl cursor-pointer text-sm font-bold bg-[#00D0B0] text-white flex gap-2 items-center transition-all duration-300 hover:bg-[#2aad9a]'
                 >
-                  <PiTelegramLogoBold className='text-white size-4 transition-all duration-300 hover:bg-[#256e63]' />
+                  <PiTelegramLogoBold className='text-white size-4' />
                   Send Message 
                 </button>
               </div>
@@ -320,7 +320,7 @@ const Contact = () => {
                   <h4 className='font-dm text-base font-bold'>Follow Me</h4>
                   <div className='flex gap-7'>
                     <FaLinkedin />
-                    <FaGithub />
+                    <Link to="https://github.com/muneebkhan-dev"><FaGithub /></Link>
                     <FaFacebook />
                   </div>
                 </div>
