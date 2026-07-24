@@ -84,7 +84,7 @@ const Services = () => {
             return (
               <div
                 key={service.id}
-                className='service-card flex flex-col items-center justify-center gap-3 bg-white shadow-xl rounded-2xl p-5 lg:p-8'
+                className='service-card flex flex-col items-center justify-center gap-3 bg-white shadow-xl rounded-2xl p-5 lg:p-8 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl'
               >
                 <div className='service-icon w-20 md:w-14 lg:w-16 h-20 md:h-14 lg:h-16 rounded-full bg-[#222831] flex items-center justify-center'>
                   <Icon className='ser-icon text-4xl text-[#00D0B0]' />
